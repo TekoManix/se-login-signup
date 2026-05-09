@@ -10,6 +10,9 @@ import CreateProject from './CreateProject';
 import CreateTeam from './CreateTeam';
 import ViewProjects from './ViewProjects';
 import ViewTeams from './ViewTeams';
+import ManageTeamRoster from './ManageTeamRoster';
+import CreateUserStory from './CreateUserStory';
+import Home from './Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,6 +26,9 @@ const router = createBrowserRouter(
             <Route path="/CreateTeam" element={<CreateTeam />} />
             <Route path="/ViewProjects" element={<ViewProjects />} />
             <Route path="/ViewTeams" element={<ViewTeams />} />
+            <Route path="/ManageTeamRoster" element={<ManageTeamRoster />} />
+            <Route path="/CreateUserStory" element={<CreateUserStory />} />
+            <Route path="/Home" element={<Home />} />
         </>
     )
 );

@@ -13,7 +13,8 @@ function Login() {
         axios.post('http://localhost:9000/login', { userid, password })
             .then((res) => {
                 alert('Login successful!');
-                navigate('/ViewProjects');
+                localStorage.setItem('user', JSON.stringify(res.data));
+                navigate('/Home');
             })
             .catch((err) => alert('Invalid credentials'));
     };
